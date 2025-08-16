@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# If the request is for an existing file or directory, skip
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Routes
+RewriteRule ^list$ list.php [L,QSA]
+RewriteRule ^about$ about.php [L,QSA]
+RewriteRule ^contact$ contact.php [L,QSA]
+RewriteRule ^login$ login.php [L,QSA]
+RewriteRule ^register$ register.php [L,QSA]
+
+# Image proxy
+RewriteRule ^image\.php$ image.php [L,QSA]
+
+# Manga detail: /manga/slug-123
+RewriteRule ^manga/([A-Za-z0-9-]+)-([0-9]+)$ manga.php?id=$2 [L,QSA]
+
+# Reader: /read/slug-123/chapter-1-999
+RewriteRule ^read/([A-Za-z0-9-]+)-([0-9]+)/chapter-([A-Za-z0-9.-]+)-([0-9]+)$ read.php?id=$4 [L,QSA]

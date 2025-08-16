@@ -1,0 +1,7 @@
+Admin Routes:
+- dashboard.php
+- mangas.php
+- chapters.php
+- genres.php
+- messages.php
+- retriever.php

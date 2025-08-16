@@ -1,0 +1,29 @@
+/* Core styles */
+body { background-color: #0f1226; color: #e6e8f0; }
+.navbar, .footer { background-color: #151938; }
+.card { background-color: #1a1f4a; border: 1px solid #2a3170; }
+.card-title, .card-text, .list-group-item { color: #e6e8f0; }
+.list-group-item { background-color: #151938; border-color: #2a3170; }
+.badge { background-color: #2a3170; }
+
+body.light-mode { background-color: #f5f7fb; color: #222; }
+body.light-mode .navbar, body.light-mode .footer { background-color: #fff; }
+body.light-mode .card { background-color: #fff; border-color: #e6e8f0; }
+body.light-mode .list-group-item { background-color: #fff; border-color: #e6e8f0; color: #333; }
+
+/* Reader */
+.reader-container { max-width: 980px; margin: 0 auto; padding: 1rem; }
+.reader-img { width: 100%; height: auto; display: block; margin: 0 auto 1rem; border-radius: 4px; }
+.reader-toolbar { position: sticky; top: 56px; z-index: 1030; background: rgba(0,0,0,0.25); backdrop-filter: blur(6px); padding: .5rem; border-radius: 6px; }
+body.light-mode .reader-toolbar { background: rgba(255,255,255,0.6); }
+
+/* Carousel img heights */
+.carousel-item img { object-fit: cover; height: 360px; }
+
+/* Forms */
+.form-control, .form-select { background-color: #101433; color: #e6e8f0; border-color: #2a3170; }
+body.light-mode .form-control, body.light-mode .form-select { background-color: #fff; color: #222; border-color: #ced4da; }
+.btn-primary { background: linear-gradient(90deg,#3d49b2,#6b2ebf); border: none; }
+
+/* Footer */
+.footer { padding: 2rem 0; margin-top: 3rem; }

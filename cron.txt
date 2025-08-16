@@ -1,0 +1,2 @@
+# Run MangaDex retriever daily at 02:00
+0 2 * * * /usr/bin/php /var/www/html/manga_retriever.php --mode=api --lang=en >> /var/log/crypyedmanga_retriever.log 2>&1
